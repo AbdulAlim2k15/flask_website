@@ -15,12 +15,21 @@
     </style>
   </head>
   <body>
+    {% include 'nav.html' %}
     <div class = "container">
     <h1 class="text-center mt-2 mb-4">XYX Software Solutions</h1>
     <img class = "img-fluid" id ="banner" src = "/static/banner.jpeg">
     <h2 class="text-center mt-2 mb-4">About XYX Software Solutions</h2>
+      
+      <div class = "row" style = "margin: 15px 15px">
+        <div class = "col-md-6">
     <p class="lead" class= "bodytext">XYZ Software Solution is a cutting-edge technology platform that revolutionizes the way businesses operate and manage their processes. With its robust and customizable features, XYZ Software Solution caters to a diverse range of industries, providing seamless integration and efficient solutions for complex business challenges. The software is designed with user-friendly interfaces, making it accessible for both tech-savvy professionals and those new to advanced technology. Its innovative modules cover various aspects of business operations, from project  management and resource allocation to data analytics and reporting. XYZ Software Solution stands out for its scalability, adaptability, and commitment to staying ahead of industry trends, ensuring that businesses can thrive in an ever-evolving digital landscape.
     </p>
+        </div>
+        <div class = "d-none d-md-block col-md-6">
+          <img src = "/static/side-img.jpg" width = "100%" height = "100%">
+        </div>
+      </div>
 
     <h2 class="text-center mt-2 mb-4">Open Positions</h2>
       
@@ -31,11 +40,9 @@
     </div>
       
     <div style="text-align:center;">
-    <button class="btn btn-primary btn-lg">Contact Us</button>
-      <p class = "mt-4">
-        Copyright 2022, XYX Software Solutions
-      </p>
+      <a href="mailto:xyz@gmail.com?subject=Question about job oppening" class="btn btn-outline-primary">Contact</a>
     </div>
     </div>
+    {% include 'footer.html' %}
   </body>
 </html>
